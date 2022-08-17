@@ -8,6 +8,7 @@ import Contact from "../src/pages/Contact/Contact";
 import About from "../src/pages/About/About";
 import NoPage from "../src/pages/NoPage/NoPage";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
+      <Footer/>
     </>
   );
 }
