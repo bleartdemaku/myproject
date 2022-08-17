@@ -1,0 +1,14 @@
+@import "../../theme/colors.scss";
+
+* {
+    align-items: center;
+  .icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 2rem;
+  }
+  .register {
+    color: $black;
+    text-decoration: none;
+  }
+}
