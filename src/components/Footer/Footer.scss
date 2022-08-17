@@ -1,0 +1,25 @@
+@import "../../theme/_colors.scss";
+
+.main-footer {
+  background-color: $gray5;
+  position: fixed;
+  width: 100%;
+
+  .list-unstyled {
+    color: $light;
+  }
+
+  .footer-bottom {
+    color: $light;
+    margin-top: 2rem;
+  }
+
+  h4 {
+    color: $light;
+  }
+
+  .part {
+    margin-top: 2rem;
+  }
+
+}
