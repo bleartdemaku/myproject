@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import NavbarBootstrap from "./components/Navbar/NavbarBootstrap";
 import Login from "./pages/Login/Login";
 import Home from "../src/pages/Home/Home";
 import Services from "../src/pages/Services/Services";
@@ -8,12 +7,10 @@ import Contact from "../src/pages/Contact/Contact";
 import About from "../src/pages/About/About";
 import NoPage from "../src/pages/NoPage/NoPage";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <>
-      <NavbarBootstrap />
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<Home />} />
@@ -23,7 +20,6 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
-      <Footer/>
     </>
   );
 }

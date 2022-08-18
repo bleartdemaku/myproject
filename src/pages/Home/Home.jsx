@@ -3,17 +3,27 @@ import CardBootstrap from "../../components/Card/CardBootstrap";
 import CarouselBootstrap from "../../components/Carousel/CarouselBootstrap";
 import Container from "react-bootstrap/Container";
 import cardContent from "../../content/cardContent";
+import NavbarBootstrap from "../../components/Navbar/NavbarBootstrap";
+import AccordionBootstrap from "../../components/Accordion/AccordionBootstrap";
+import "./Home.scss";
 
 function Home() {
   return (
-    <div>
-      <CarouselBootstrap />
-      <Container className="row">
-        {cardContent.map((item, index) => (
-          <CardBootstrap key={index} item={item} />
-        ))}
+    <>
+      <NavbarBootstrap />
+      <CarouselBootstrap className="carousel" />
+      <Container>
+        <h1 className="text">This is what our Companyis trying to achive!</h1>
+        <AccordionBootstrap />
       </Container>
-    </div>
+      <Container className="wrapper" >
+        <Container className="row d-flex justify-content-between">
+          {cardContent.map((item, index) => (
+            <CardBootstrap key={index} item={item} />
+          ))}
+        </Container>
+      </Container>
+    </>
   );
 }
 
