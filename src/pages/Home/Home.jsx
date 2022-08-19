@@ -14,8 +14,12 @@ function Home() {
       <NavbarBootstrap />
       <CarouselBootstrap className="carousel" />
       <Container>
-        <h1 className="text">This is what our Companyis trying to achive!</h1>
-        <AccordionBootstrap />
+        <h1 className="text">This is what our Company is trying to achive!</h1>
+        <Container className="row d-flex justify-content-between">
+          {cardContent.map((item, index) => (
+            <AccordionBootstrap key={index} item={item} />
+          ))}
+        </Container>
       </Container>
       <Container className="wrapper" >
         <Container className="row d-flex justify-content-between">
