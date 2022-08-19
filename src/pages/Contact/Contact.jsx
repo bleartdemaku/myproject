@@ -1,9 +1,12 @@
 import React from 'react'
+import Footer from '../../components/Footer/Footer'
+import NavbarBootstrap from '../../components/Navbar/NavbarBootstrap'
 
 function Contact() {
   return (
     <div>
-      <h1>this is contact us page!!</h1>
+      <NavbarBootstrap />
+      <Footer />
     </div>
   )
 }

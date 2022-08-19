@@ -6,6 +6,7 @@ import cardContent from "../../content/cardContent";
 import NavbarBootstrap from "../../components/Navbar/NavbarBootstrap";
 import AccordionBootstrap from "../../components/Accordion/AccordionBootstrap";
 import "./Home.scss";
+import Footer from '../../components/Footer/Footer'
 
 function Home() {
   return (
@@ -23,6 +24,7 @@ function Home() {
           ))}
         </Container>
       </Container>
+      <Footer />
     </>
   );
 }
