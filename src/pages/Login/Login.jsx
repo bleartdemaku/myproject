@@ -6,8 +6,10 @@ import userIcon from "../../assets/user.png";
 import loginIcon from "../../assets/login.svg";
 import { userSchema } from "../../validations/UserValidation";
 import "./Login.scss";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
+  const navigate = useNavigate();
   const createUser = async (event) => {
     event.preventDefault();
     let formData = {
@@ -16,6 +18,10 @@ function Login() {
     };
     const isValid = await userSchema.isValid(formData);
     console.log(isValid);
+
+    if (isValid === true) {
+      navigate("/home");
+    }
   };
 
   return (
