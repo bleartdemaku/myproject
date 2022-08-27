@@ -15,7 +15,7 @@ function Home() {
       <NavbarBootstrap />
       <CarouselBootstrap className="carousel" />
       <Container>
-        <h1 className="text">This is what our Company is trying to achive!</h1>
+        <h1 className="text">Our models!</h1>
         <Container className="row d-flex justify-content-between">
           {accordionContent.map((item, index) => (
             <AccordionBootstrap key={index} item={item} />

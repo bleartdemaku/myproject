@@ -4,7 +4,7 @@ function AccordionBootstrap({ item: { id, title, body } }) {
   return (
     <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
-        <Accordion.Header>{title} : {id}</Accordion.Header>
+        <Accordion.Header>{id} : {title}</Accordion.Header>
         <Accordion.Body>
           {body}
         </Accordion.Body>
