@@ -7,7 +7,7 @@ function CarouselBootstrap() {
         {servicesContent.map((item, index) => (
           <Carousel.Item key={index}>
             <img
-              className="d-block w-100"
+              className="d-block w-100 h-100"
               src={'images/'+item.image}
               alt="...loading"
               // height="600"
