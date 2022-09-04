@@ -4,7 +4,8 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
-import logo from '../../assets/bugatti-logo.png';
+import logo from "../../assets/bugatti-logo.png";
+import "./NavbarBootstrap.scss";
 // import NavDropdown from "react-bootstrap/NavDropdown";
 
 function NavbarBootstrap() {
@@ -54,10 +55,10 @@ function NavbarBootstrap() {
               <Nav.Link className="text-white" href="/services">
                 Services
               </Nav.Link>
-              <Nav.Link className="text-white" href="/contact">
+              <Nav.Link className="text-white disabled-link" href="/contact">
                 Contact
               </Nav.Link>
-              <Nav.Link className="text-white" href="/about">
+              <Nav.Link className="text-white disabled-link" href="/about">
                 About
               </Nav.Link>
               {/* <NavDropdown title="Link" id="navbarScrollingDropdown">
