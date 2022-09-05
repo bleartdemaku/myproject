@@ -1,9 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
+import useFetch from "../../hooks/useFetch";
 
 function TeamMember1() {
   const { id } = useParams();
-  const { employees: employee } = useEffect("http://localhost:8000/employees" + id);
+  const { data: employee } = useFetch('http://localhost:8000/employees/' + id);
 
   return (
     <div className="flex flex-row">
