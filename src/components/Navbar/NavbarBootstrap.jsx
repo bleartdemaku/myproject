@@ -6,25 +6,11 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import logo from "../../assets/bugatti-logo.png";
 import "./NavbarBootstrap.scss";
-// import NavDropdown from "react-bootstrap/NavDropdown";
 
 function NavbarBootstrap() {
   return (
     <>
-      {/* <Navbar bg="dark" variant="dark">
-        <Container>
-          <Navbar.Brand href="/home">Bleart</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="/team">Team</Nav.Link>
-            <Nav.Link href="/services">Services</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar> */}
-
-      {/* New Navbar area here */}
-      <Navbar bg="dark" expand="lg">
+      <Navbar bg="dark" expand="lg" style={{zIndex:1}}>
         <Container fluid>
           <Navbar.Brand href="/home">
             <img
