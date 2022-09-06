@@ -1,61 +1,65 @@
 import React from "react";
-import './Footer.scss';
+import "./Footer.scss";
 
-function Footer() {
-  return (
-    <div className="main-footer">
-      <div className="container">
-        <div className="row">
-          {/* Cloumn 1 */}
-          <div className="part col-md-3 col-sm-6">
-            <h4>Contact Us</h4>
-            <ul className="list-unstyled">
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Youtube</a></li>
-              <li><a href="#">LinkedIn</a></li>
-            </ul>
-          </div>
-          {/* Cloumn 2 */}
-          <div className="part col-md-3 col-sm-6">
-            <h4>My Github</h4>
-            <ul className="list-unstyled">
-              <li><a href="https://github.com/bleartdemaku/myproject">This project!</a></li>
-              <li>lorem ipsum</li>
-              <li>lorem ipsum</li>
-              <li>lorem ipsum</li>
-            </ul>
-          </div>
-          {/* Cloumn 3 */}
-          <div className="part col-md-3 col-sm-6">
-            <h4>Our pages</h4>
-            <ul className="list-unstyled">
-              <li><a href="./home">Home Page</a></li>
-              <li><a href="./team">Team</a></li>
-              <li><a href="./services">Services</a></li>
-              <li><a href="./about">About</a></li>
-            </ul>
-          </div>
-          {/* Cloumn 4 */}
-          <div className="part col-md-3 col-sm-6">
-            <h4>lorem ipsum</h4>
-            <ul className="list-unstyled">
-              <li>lorem ipsum</li>
-              <li>lorem ipsum</li>
-              <li>lorem ipsum</li>
-              <li>lorem ipsum</li>
-            </ul>
-          </div>
-        </div>
-        {/* Footer Bottom */}
-        <div className="footer-bottom">
-          <p className="text-xs-center">
-            &copy; {new Date().getFullYear()} Bleart Demaku - All Rights Reserved
+const Footer = () => (
+  <footer className="main-footer font-small blue pt-4">
+    <div className="container-fluid text-center text-md-left">
+      <div className="row text-white">
+        <div className="col-md-6 mt-md-0 mt-3">
+          <h5 className="text-uppercase">Our ptoject!!</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
           </p>
+        </div>
+
+        <hr className="clearfix w-100 d-md-none pb-0" />
+
+        <div className="col-md-3 mb-md-0 mb-3 links">
+          <h5 className="text-uppercase">Fast Links</h5>
+          <ul className="list-unstyled">
+            <li>
+              <a href="/team">Team</a>
+            </li>
+            <li>
+              <a href="/services">Services</a>
+            </li>
+            <li>
+              <a href="/contact">Contact Us</a>
+            </li>
+            <li>
+              <a href="/about">About Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div className="col-md-3 mb-md-0 mb-3 links">
+          <h5 className="text-uppercase">Contact Us</h5>
+          <ul className="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-  );
-}
+
+    <div className="footer-copyright text-center py-3 text-white">
+      © 2020 Copyright:
+      <a href="#!"> Bleart</a>
+    </div>
+  </footer>
+);
 
 export default Footer;

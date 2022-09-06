@@ -2,26 +2,9 @@
 
 .main-footer {
   background-color: $gray5;
-  width: 100%;
-
-  .list-unstyled {
-    color: $light;
+  
+  .links{
+    text-align: left;
   }
-
-  a {
-    text-decoration: none;
-  }
-
-  .footer-bottom {
-    color: $light;
-    padding-top: 2rem;
-  }
-
-  h4 {
-    color: $light;
-  }
-
-  .part {
-    padding-top: 2rem;
-  }
+  
 }
