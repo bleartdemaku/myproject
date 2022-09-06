@@ -21,5 +21,25 @@
       "about": "this is just a test description",
       "image": "https://cdn-icons-png.flaticon.com/512/2335/2335153.png"
     }
+  ],
+  "bugatti": [
+    {
+      "id": 1,
+      "title": "test test",
+      "body": "this is just a test description",
+      "image": "https://cdn-icons-png.flaticon.com/512/2202/2202112.png"
+    },
+    {
+      "id": 2,
+      "title": "test test",
+      "body": "this is just a test description",
+      "image": "https://cdn-icons-png.flaticon.com/512/1864/1864593.png"
+    },
+    {
+      "id": 3,
+      "title": "test test",
+      "body": "this is just a test description",
+      "image": "https://cdn-icons-png.flaticon.com/512/2335/2335153.png"
+    }
   ]
 }

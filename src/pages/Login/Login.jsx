@@ -1,69 +1,72 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
-import userIcon from "../../assets/user.png";
-import loginIcon from "../../assets/login.svg";
-import { userSchema } from "../../validations/UserValidation";
 import "./Login.scss";
+import { Formik } from "formik";
+import { userSchema } from "../../validations/UserValidation";
 import { useNavigate } from "react-router-dom";
 
 function Login() {
   const navigate = useNavigate();
-  const createUser = async (event) => {
-    event.preventDefault();
-    let formData = {
-      email: event.target[0].value,
-      password: event.target[1].value,
-    };
-    const isValid = await userSchema.isValid(formData);
-    console.log(isValid);
-
-    if (isValid === true) {
-      navigate("/home");
-    }
-  };
-
   return (
     <>
-      <Container className="mt-5">
-        <Row>
-          <Col lg={4} md={6} sm={12} className="text-center p-3 mt-5">
-            <img className="icon" src={userIcon} alt="loading..." />
-            <Form onSubmit={createUser}>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                {/* <Form.Label>Email address</Form.Label> */}
-                <Form.Control type="email" placeholder="Enter email" />
-                {/* <Form.Text className="text-muted">
-                  We'll never share your email with anyone else.
-                </Form.Text> */}
-              </Form.Group>
+      {/* Wrapping form inside formik tag and passing our schema to validationSchema prop */}
+      <Formik
+        validationSchema={userSchema}
+        initialValues={{ email: "", password: "" }}
+        onSubmit={(values) => {
+          // Alert the input values of the form that we filled
+          alert(JSON.stringify(values));
 
-              <Form.Group className="mb-3" controlId="formBasicPassword">
-                {/* <Form.Label>Password</Form.Label> */}
-                <Form.Control type="password" placeholder="Password" />
-              </Form.Group>
-
-              <Button className="primary btn-block" type="submit">
-                Login
-              </Button>
-
-              <div className="text-left mt-3">
-                <p>
-                  Dont have an account yet!
-                  <a href="register">
-                    <small className="register">Register</small>
-                  </a>
+          navigate("/home");
+        }}
+      >
+        {({
+          values,
+          errors,
+          touched,
+          handleChange,
+          handleBlur,
+          handleSubmit,
+        }) => (
+          <div className="login">
+            <div className="form">
+              {/* Passing handleSubmit parameter tohtml form onSubmit property */}
+              <form noValidate onSubmit={handleSubmit}>
+                <span>Login</span>
+                {/* Our input html with passing formik parameters like handleChange, values, handleBlur to input properties */}
+                <input
+                  type="email"
+                  name="email"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.email}
+                  placeholder="Enter email id / username"
+                  className="form-control inp_text"
+                  id="email"
+                />
+                {/* If validation is not passed show errors */}
+                <p className="error">
+                  {errors.email && touched.email && errors.email}
                 </p>
-              </div>
-            </Form>
-          </Col>
-
-          <Col lg={8} md={6} sm={12}>
-            <img className="w-100" src={loginIcon} alt="loading..." />
-          </Col>
-        </Row>
-      </Container>
+                {/* Our input html with passing formik parameters like handleChange, values, handleBlur to input properties */}
+                <input
+                  type="password"
+                  name="password"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.password}
+                  placeholder="Enter password"
+                  className="form-control"
+                />
+                {/* If validation is not passed show errors */}
+                <p className="error">
+                  {errors.password && touched.password && errors.password}
+                </p>
+                {/* Click on submit button to submit the form */}
+                <button type="submit">Login</button>
+              </form>
+            </div>
+          </div>
+        )}
+      </Formik>
     </>
   );
 }
