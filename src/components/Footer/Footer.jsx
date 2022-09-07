@@ -57,7 +57,7 @@ const Footer = () => (
 
     <div className="footer-copyright text-center py-3 text-white">
       © 2020 Copyright:
-      <a href="#!"> Bleart</a>
+      <a href="#!" style={{ textDecoration: 'none', color: 'grey'}}> Bleart</a>
     </div>
   </footer>
 );

@@ -5,21 +5,30 @@
       "name": "Bleart Demaku",
       "job": "test test",
       "about": "this is just a test description",
-      "image": "https://cdn-icons-png.flaticon.com/512/2202/2202112.png"
+      "image": "https://cdn-icons-png.flaticon.com/512/2202/2202112.png",
+      "location": "Rexhep Krasniqi, 10000 Pristina, Kosovo",
+      "email": "bdemaku15@gmail.com",
+      "phone": "+383-45-827-480"
     },
     {
       "id": 2,
       "name": "Jon Demaku",
       "job": "test test",
       "about": "this is just a test description",
-      "image": "https://cdn-icons-png.flaticon.com/512/1864/1864593.png"
+      "image": "https://cdn-icons-png.flaticon.com/512/1864/1864593.png",
+      "location": "Rexhep Krasniqi, 10000 Pristina, Kosovo",
+      "email": "bdemaku15@gmail.com",
+      "phone": "+383-45-827-480"
     },
     {
       "id": 3,
       "name": "Rinesa Demaku",
       "job": "test test",
       "about": "this is just a test description",
-      "image": "https://cdn-icons-png.flaticon.com/512/2335/2335153.png"
+      "image": "https://cdn-icons-png.flaticon.com/512/2335/2335153.png",
+      "location": "Rexhep Krasniqi, 10000 Pristina, Kosovo",
+      "email": "bdemaku15@gmail.com",
+      "phone": "+383-45-827-480"
     }
   ],
   "bugatti": [

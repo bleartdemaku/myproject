@@ -1,11 +1,17 @@
-import React from 'react'
+import React from "react";
+import logoBg from "../../assets/404.png";
+import NavbarBootstrap from "../../components/Navbar/NavbarBootstrap";
+import Footer from "../../components/Footer/Footer";
+import "./NoPage.scss";
 
 function NoPage() {
   return (
-    <div>
-      <h1>ups something went wrong...</h1>
-    </div>
-  )
+    <>
+      <NavbarBootstrap />
+      <img src={logoBg} alt="" className="logo" />
+      <Footer />
+    </>
+  );
 }
 
-export default NoPage
+export default NoPage;

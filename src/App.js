@@ -7,7 +7,7 @@ import Contact from "../src/pages/Contact/Contact";
 import About from "../src/pages/About/About";
 import NoPage from "../src/pages/NoPage/NoPage";
 import "bootstrap/dist/css/bootstrap.min.css";
-import TeamMember1 from "./pages/TeamMembers/TeamMember1";
+import TeamMembers from "./components/TeamMembers/TeamMembers";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/team" element={<Team />} />
-        <Route path="/team/:id" element={<TeamMember1 />} />
+        <Route path="/team/:id" element={<TeamMembers />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<NoPage />} />
