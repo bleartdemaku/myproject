@@ -38,7 +38,7 @@ function NavbarBootstrap() {
               <Nav.Link className="text-white" href="/services">
                 Services
               </Nav.Link>
-              <Nav.Link className="text-white disabled-link" href="/contact">
+              <Nav.Link className="text-white" href="/contact">
                 Contact
               </Nav.Link>
               <Nav.Link className="text-white disabled-link" href="/about">

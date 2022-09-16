@@ -17,7 +17,7 @@ const Footer = () => (
 
         <hr className="clearfix w-100 d-md-none pb-0" />
 
-        <div className="col-md-3 mb-md-0 mb-3 links">
+        <div className="col-md-3 mb-md-0 mb-3 links text-center">
           <h5 className="text-uppercase">Fast Links</h5>
           <ul className="list-unstyled">
             <li>
@@ -35,7 +35,7 @@ const Footer = () => (
           </ul>
         </div>
 
-        <div className="col-md-3 mb-md-0 mb-3 links">
+        <div className="col-md-3 mb-md-0 mb-3 links text-center">
           <h5 className="text-uppercase">Contact Us</h5>
           <ul className="list-unstyled">
             <li>
