@@ -6,5 +6,13 @@
   .links{
     text-align: left;
   }
+
+  a {
+    color: $light;
+  }
+
+  a:hover {
+    color: $blue1;
+  }
   
 }

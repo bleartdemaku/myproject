@@ -29,10 +29,10 @@ function Team() {
     <>
       <NavbarBootstrap />
 
-      <video src={videoBg} autoPlay loop muted id="video" />
       <div className="content">
-        <h1>This is our team!!!</h1>
+        <video src={videoBg} autoPlay loop muted id="video" />
         <p>
+          <h1>This is our team!!!</h1> <br />
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>

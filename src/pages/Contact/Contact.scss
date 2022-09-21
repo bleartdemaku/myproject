@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 
 .login {
-  max-width: 560px;
+  // min-width: 560px;
   padding: 8% 0 0;
   margin: auto;
   font-family: "Comfortaa", cursive;
@@ -10,7 +10,7 @@
     z-index: 1;
     background: #ffffff;
     border-radius: 10px;
-    max-width: 560px;
+    width: 100%;
     margin: 0 auto 100px;
     padding: 45px;
     text-align: center;
