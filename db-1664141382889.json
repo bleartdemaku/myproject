@@ -1,0 +1,72 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Bleart Demaku",
+      "job": "test test",
+      "about": "this is just a test description",
+      "image": "https://cdn-icons-png.flaticon.com/512/2202/2202112.png",
+      "location": "Rexhep Krasniqi, 10000 Pristina, Kosovo",
+      "email": "bdemaku15@gmail.com",
+      "phone": "+383-45-827-480"
+    },
+    {
+      "id": 2,
+      "name": "Jon Demaku",
+      "job": "test test",
+      "about": "this is just a test description",
+      "image": "https://cdn-icons-png.flaticon.com/512/1864/1864593.png",
+      "location": "Rexhep Krasniqi, 10000 Pristina, Kosovo",
+      "email": "bdemaku15@gmail.com",
+      "phone": "+383-45-827-480"
+    },
+    {
+      "id": 3,
+      "name": "Rinesa Demaku",
+      "job": "test test",
+      "about": "this is just a test description",
+      "image": "https://cdn-icons-png.flaticon.com/512/2335/2335153.png",
+      "location": "Rexhep Krasniqi, 10000 Pristina, Kosovo",
+      "email": "bdemaku15@gmail.com",
+      "phone": "+383-45-827-480"
+    }
+  ],
+  "bugatti": [
+    {
+      "id": 1,
+      "title": "test test",
+      "body": "this is just a test description",
+      "image": "https://cdn-icons-png.flaticon.com/512/2202/2202112.png"
+    },
+    {
+      "id": 2,
+      "title": "test test",
+      "body": "this is just a test description",
+      "image": "https://cdn-icons-png.flaticon.com/512/1864/1864593.png"
+    },
+    {
+      "id": 3,
+      "title": "test test",
+      "body": "this is just a test description",
+      "image": "https://cdn-icons-png.flaticon.com/512/2335/2335153.png"
+    },
+    {
+      "id": 4,
+      "title": "test test",
+      "body": "this is just a test description",
+      "image": "https://cdn-icons-png.flaticon.com/512/2202/2202112.png"
+    },
+    {
+      "id": 5,
+      "title": "test test",
+      "body": "this is just a test description",
+      "image": "https://cdn-icons-png.flaticon.com/512/1864/1864593.png"
+    },
+    {
+      "id": 6,
+      "title": "test test",
+      "body": "this is just a test description",
+      "image": "https://cdn-icons-png.flaticon.com/512/2335/2335153.png"
+    }
+  ]
+}
