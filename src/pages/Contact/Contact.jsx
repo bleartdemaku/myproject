@@ -31,7 +31,7 @@ function Contact() {
             handleBlur,
             handleSubmit,
           }) => (
-            <div className="login">
+            <div className="contact">
               <div className="form">
                 {/* Passing handleSubmit parameter tohtml form onSubmit property */}
                 <form noValidate onSubmit={handleSubmit}>
